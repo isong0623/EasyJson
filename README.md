@@ -66,9 +66,45 @@ obj is equals ejb :true
 
 ##### 示例代码
 ```
+        String strArray = "[\"11111111111111111111111111111\",2.2,3333333333333,4444,5.555555555555]";
+        JSONArray jArr = getJSONArray(strArray);
+        ESONArray eArr = new ESONArray(strArray);//or ESON.getJSONArray(strArray);
+        System.out.println("jArr equals eArr ? "+eArr.toString().equals(jArr.toString())+"\n");
 
+        Object objs[] = new Object[]{"1",2.0f,3L,4,5D};//normally value
+        for(int i=0,ni= eArr.length();i<ni;++i){
+            System.out.println(eArr.getArrayValue(i,objs[i]));
+        }
+
+        System.out.println();//toString
+        for(int i=0,ni= eArr.length();i<ni;++i){
+            System.out.println(eArr.getArrayValue(i,""));
+        }
+
+        System.out.println();//toInteger
+        for(int i=0,ni= eArr.length();i<ni;++i){
+            System.out.println(eArr.getArrayValue(i,1));
+        }
 ```
 ##### 示例代码输出
 ```
+jArr equals eArr ? true
 
+11111111111111111111111111111
+2.2
+3333333333333
+4444
+5.555555555555
+
+11111111111111111111111111111
+2.2
+3333333333333
+4444
+5.555555555555
+
+1
+1
+1
+4444
+1
 ```
