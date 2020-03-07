@@ -1,9 +1,15 @@
 # EasyJson
 很容易处理JSONObject&amp;JSONArray的工具。
+使用了大概200行的代码
 Easy to process JSONObject&JSONArray.
+Implement with about 200 lines.
 
 ## 如何使用ESONObject? 
 ## How To User ESONObject?
+
+```
+
+```
 
 ##### 示例代码
 ```
