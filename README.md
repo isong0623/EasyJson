@@ -36,6 +36,7 @@ Easy to process JSONObject&JSONArray.
         System.out.println(ejb.getJSONValue("int2","1")+"//int -> string");
         System.out.println(ejb.getJSONValue("long2",1)+"//long -> int");
         System.out.println(ejb.getJSONValue("string2",1)+"//string -> int");
+```
 ##### 示例代码输出
 ```
 obj is equals ejb :true
