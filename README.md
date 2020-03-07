@@ -69,7 +69,8 @@ obj is equals ejb :true
         String strArray = "[\"11111111111111111111111111111\",2.2,3333333333333,4444,5.555555555555]";
         JSONArray jArr = getJSONArray(strArray);
         ESONArray eArr = new ESONArray(strArray);//or ESON.getJSONArray(strArray);
-        System.out.println("jArr equals eArr ? "+eArr.toString().equals(jArr.toString())+"\n");
+        System.out.println("jArr equals eArr ? "+eArr.toString().equals(jArr.toString()));
+        System.out.println(eArr.toString()+"\n");
 
         Object objs[] = new Object[]{"1",2.0f,3L,4,5D};//normally value
         for(int i=0,ni= eArr.length();i<ni;++i){
@@ -89,6 +90,7 @@ obj is equals ejb :true
 ##### 示例代码输出
 ```
 jArr equals eArr ? true
+["11111111111111111111111111111",2.2,3333333333333,4444,5.555555555555]
 
 11111111111111111111111111111
 2.2
