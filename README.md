@@ -17,13 +17,13 @@ Easy to process JSONObject&JSONArray.
         System.out.println(ejb.toString()+"\n");
 
         //get the data in ESONObject 从对象中取出数据
-        int i = ejb.getJSONValue("int",0);
+        int i = ejb.getJSONValue("int",0);//or ESON.getJSONValue(obj,"int",0);
         System.out.println(i);
-        long l = ejb.getJSONValue("long",0L);
+        long l = ejb.getJSONValue("long",0L);//or ESON.getJSONValue(obj,"long",0L);
         System.out.println(l);
-        double d = ejb.getJSONValue("double",0D);
+        double d = ejb.getJSONValue("double",0D);//or ESON.getJSONValue(obj,"double",0D);
         System.out.println(d);
-        float f = ejb.getJSONValue("double",0f);
+        float f = ejb.getJSONValue("double",0f);//or ESON.getJSONValue(obj,"double",0f);
         System.out.println(f+"\n");
 
         //insert data 插入数据
