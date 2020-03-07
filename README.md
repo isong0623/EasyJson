@@ -110,3 +110,8 @@ jArr equals eArr ? true
 4444
 1
 ```
+## 其他
+## Others
+```
+ESON.setDebugable(true);//print the ESON Exception default false  打印ESON异常日志 默认false
+```
