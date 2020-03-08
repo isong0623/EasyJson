@@ -8,7 +8,7 @@ Implement with about 200 lines.
 ## How To User ESONObject?
 
 ```
-
+api "com.github.isong0623:EasyJson:1.0-support"
 ```
 
 ##### 示例代码
